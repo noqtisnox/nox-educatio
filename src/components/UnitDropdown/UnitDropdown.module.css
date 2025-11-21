@@ -5,7 +5,7 @@
 }
 
 .unitDropdownButton {
-    background: #2563eb;
+    background: var(--color-main);
     color: white;
     border: 1px solid #d1d5db;
     border-radius: 6px;
@@ -21,7 +21,7 @@
         border 0.2s;
 }
 .unitDropdownButton:hover {
-    background: #4e78d4;
+    background: var(--color-main-hover);
     border-color: #a1a1aa;
 }
 

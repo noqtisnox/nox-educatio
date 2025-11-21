@@ -9,11 +9,12 @@
   padding: 8px 16px;
   margin: 8px;
   
+  background-color: white;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
 .headline {
-  color: #7f5dff;
+  color: var(--color-main);
   text-decoration: underline;
   cursor: default;
   text-align: center;
@@ -27,13 +28,13 @@
   
   padding: 0 16px;
   
-  scrollbar-color: #7f5dff whitesmoke;
+  scrollbar-color: var(--color-main) whitesmoke;
   scrollbar-width: 5px;
 }
 
 .updateItem {
   color: white;
-  background-color: #7f5dff;
+  background-color: var(--color-main);
   padding: 8px 16px;
   border-radius: 16px;
   margin-bottom: 8px;
@@ -101,7 +102,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #7f5dff;
+  background-color: var(--color-main);
   border-radius: 5px;
 }
 

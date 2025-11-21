@@ -10,14 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2776d6;
-  background: radial-gradient(circle, rgba(39, 118, 214, 1) 0%, rgba(181, 235, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
 .authContainer {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 0 16px rgba(0,0,0,0.2);
   padding: 40px 32px 32px 32px;
   display: flex;
   flex-direction: column;
@@ -37,7 +35,7 @@
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 24px;
-  color: #2776D6;
+  color: var(--color-main);
   text-align: center;
 }
 
@@ -45,7 +43,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0;
-  color: #2776D6;
+  color: var(--color-main);
   text-align: center;
 }
 
@@ -73,8 +71,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #2776d6;
-  background: linear-gradient(90deg, rgba(39, 118, 214, 1) 0%, rgba(181, 235, 255, 1) 50%, rgba(39, 118, 214, 1) 100%);
+  background: var(--color-main);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -86,30 +83,12 @@
   box-shadow: 0 2px 8px rgba(123,47,242,0.08);
 }
 
-.logInBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: linear-gradient(90deg, #2776d6 0%, #60a5fa 100%);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(39,118,214,0.08);
-  position: relative;
-}
 .logInBtn:hover {
-  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  background: linear-gradient(90deg, var(--color-main) 0%, var(--color-main-hover) 100%);
   transform: scale(1.02);
   animation: transform 0.2s ease-in-out;
 }
 
-/* Tooltip for unavailable login */
 .logInBtn[disabled], .logInBtn[aria-disabled="true"] {
   opacity: 0.7;
   cursor: not-allowed;
@@ -120,7 +99,7 @@
   left: 50%;
   top: 110%;
   transform: translateX(-50%);
-  background: #2776d6;
+  background: var(--color-main);
   color: #fff;
   padding: 8px 16px;
   border-radius: 6px;

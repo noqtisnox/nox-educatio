@@ -1,9 +1,7 @@
 .dashboardContainer {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #e3f0ff 0%, #ffffff 60%, #a7cfff 100%);
   padding-bottom: 48px;
 }
 

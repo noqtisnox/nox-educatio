@@ -1,20 +1,17 @@
 
 .navbar {
-	width: 90%;
+	width: 95%;
 	height: 64px;
-	background: rgba(255,255,255,0.28);
-	backdrop-filter: blur(14px) saturate(160%);
-	-webkit-backdrop-filter: blur(14px) saturate(160%);
-	border: 1.5px solid rgba(255,255,255,0.32);
-	box-shadow: 0 4px 24px rgba(39,118,214,0.10);
+	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 32px;
-	border-radius: 18px;
-	position: sticky;
-	top: 0;
-	z-index: 100;
+	
+	background: white;
+	border-radius: 0 0 18px 18px;
+	box-shadow: 0 0 16px rgba(0,0,0,0.2);
+	
+	padding: 0 16px;
 }
 
 .logo {
@@ -24,6 +21,8 @@
 	object-fit: cover;
 	background: #fff;
 	box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+	
+	margin-right: 20px;
 }
 
 .navOptions {
@@ -32,7 +31,7 @@
 }
 
 .navOption {
-	color: #2563eb;
+	color: var(--color-main);
 	font-size: 1.1rem;
 	font-weight: 500;
 	cursor: pointer;
@@ -40,19 +39,19 @@
 	border-radius: 6px;
 	transition: background 0.18s, color 0.18s;
 }
+
 .navOption:hover {
-	background: linear-gradient(90deg, #2563eb22 0%, #60a5fa22 100%);
-	color: #1e40af;
+	box-shadow: 0 0 5px rgba(127,93,255,0.5);
+	/*color: var(--color-text-hover);*/
 }
 
-/* Style the user icon (lucide-react) */
 .navbar :global(svg) {
-	color: #2563eb;
+	color: var(--color-main);
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
 	transition: color 0.18s;
 }
 .navbar :global(svg):hover {
-	color: #60a5fa;
+	color: var(--color-main-hover);
 }
