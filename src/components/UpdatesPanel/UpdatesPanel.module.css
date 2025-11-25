@@ -2,8 +2,6 @@
   display: inline-flex;
   flex-direction: column;
   
-  max-height: 40%;
-  
   border-radius: 16px;
   
   padding: 8px 16px;
@@ -11,6 +9,8 @@
   
   background-color: white;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  
+  border: 2px solid var(--color-main);
 }
 
 .headline {
@@ -21,7 +21,7 @@
 }
 
 .updatesDisplay {
-  height: 200px;
+  max-height: 120px;
   width: auto;
   
   overflow-y: auto;

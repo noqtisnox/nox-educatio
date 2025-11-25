@@ -4,6 +4,8 @@ import Navbar from "../../components/Navbar";
 import UnitDropdown from "../../components/UnitDropdown";
 
 import UpdatesPanel from "../../components/UpdatesPanel";
+import ChatBlock from "../../components/ChatBlock";
+
 import { sampleAnnouncements } from "../../data/updatesPanelData";
 
 import styles from "./CoursePage.module.css";
@@ -14,34 +16,43 @@ type props = {
 };
 
 const CoursePage: React.FC<props> = () => {
-  // Placeholder for future data fetching
-
   return (
     <div className={styles.container}>
       <Navbar />
-      <div className={styles.courseMain}>
-        <div className={styles.courseInfo}>
-          <h1>Course Title</h1>
-          <p>Welcome to the course page!</p>
-          <div className={styles.unitsList}>
-            <UnitDropdown />
-            <UnitDropdown />
-            <UnitDropdown />
-            <UnitDropdown />
-            <UnitDropdown />
-          </div>
-        </div>
-        <aside>
-          <UpdatesPanel panelHeadline="Announcements" contentType="announcements" content={sampleAnnouncements} />
-          {/* A temporary placeholder for chat section */}
-          <div className={styles.chatBlock}>
-            <div className={styles.chatMessages}>
-              <p><strong>Alice:</strong> Hi everyone!</p>            
-            </div>
-            <div className={styles.chatMessages}>
-              <p><strong>Alice:</strong> Hi everyone!</p>            
-            </div>
-          </div>
+      <div className={styles.courseContentWrapper}>
+        
+        <main className={styles.mainContent}>
+          <h1 className={styles.courseTitle}>Course Title</h1>
+          <p className={styles.courseSubtitle}>Welcome to the course page!</p>
+          
+          <section className={styles.unitsSection}>
+             <h2>Course Units</h2>
+             <div className={styles.unitsList}>
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+                <UnitDropdown />
+             </div>
+          </section>
+        </main>
+        
+        <aside className={`${styles.sidebar}`}>
+          <section className={styles.courseOverview}>
+             <UpdatesPanel panelHeadline="Announcements" contentType="announcements" content={sampleAnnouncements} />
+          </section>
+          
+          <section className={styles.courseChatBlock}>
+            <ChatBlock />
+          </section>
         </aside>
       </div>
     </div>
