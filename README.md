@@ -12,25 +12,58 @@
 
 </div>
 
-## Getting Started
+## Local Development Setup
 
-For local development, follow the steps listed below.
+To get this project running locally, you need Python (3.10+) and Node.js (18+).
 
-1. **Clone the repository:**
+### 1. Backend Setup (FastAPI)
+
+Navigate to the backend directory, set up the virtual environment, and install dependencies.
+
+1. Navigate to the backend directory
 
     ```bash
-    git clone https://github.com/noqtisnox/nox-educatio.git
-    cd nox-educatio
+    cd backend
     ```
 
-2. **Install dependencies:**
+2. Create and activate a virtual environment
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+    ```
+
+3. Install Python dependencies
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Run the server
+
+    ```bash
+    uvicorn app.main:app --reload
+    ```
+
+### 2. Frontend Setup (React)
+
+Open a new terminal window, navigate to the frontend directory, and install Node dependencies.
+
+1. Navigate to the frontend directory
+
+    ```bash
+    cd frontend
+    ```
+
+2. Install Node dependencies
 
     ```bash
     npm install
     ```
 
-3. **Start the development server:**
+3. Start the React development server
 
     ```bash
-    npm run dev # the project will run on http://localhost:5173
+    npm run dev # or npm start, depending on your setup
+    # Server will run at http://localhost:5173/
     ```
