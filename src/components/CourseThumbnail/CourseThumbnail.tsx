@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./CourseThumbnail.module.css";
-import courseCoverImage from "../../assets/img/abstract-watercolor-img.jpg";
+import courseCoverImage from "@assets/img/abstract-watercolor-img.jpg";
 
 type props = {
   courseTitle: string;

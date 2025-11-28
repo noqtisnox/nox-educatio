@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Navbar from '../../components/Navbar';
-import CourseThumbnail from '../../components/CourseThumbnail';
+import Navbar from '@components/Navbar';
+import CourseThumbnail from '@components/CourseThumbnail';
 
-import UpdatesPanel from '../../components/UpdatesPanel';
+import UpdatesPanel from '@components/UpdatesPanel';
 
 import styles from './Dashboard.module.css';
-import { sampleNews, sampleDeadlines } from '../../data/updatesPanelData';
+import { sampleNews, sampleDeadlines } from '@data/updatesPanelData';
 
 const Dashboard: React.FC = () => {
   return (

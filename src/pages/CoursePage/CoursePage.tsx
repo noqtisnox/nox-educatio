@@ -1,12 +1,12 @@
 import React from "react";
 
-import Navbar from "../../components/Navbar";
-import UnitDropdown from "../../components/UnitDropdown";
+import Navbar from "@components/Navbar";
+import UnitDropdown from "@components/UnitDropdown";
 
-import UpdatesPanel from "../../components/UpdatesPanel";
-import ChatBlock from "../../components/ChatBlock";
+import UpdatesPanel from "@components/UpdatesPanel";
+import ChatBlock from "@components/ChatBlock";
 
-import { sampleAnnouncements } from "../../data/updatesPanelData";
+import { sampleAnnouncements } from "@data/updatesPanelData";
 
 import styles from "./CoursePage.module.css";
 

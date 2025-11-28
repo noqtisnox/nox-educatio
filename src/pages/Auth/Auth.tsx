@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './Auth.module.css';
-import logo from '../../assets/img/nulp-logo.jpg';
+import logo from '@assets/img/logo-light.png';
 
 import { BadgeCheck, ChromeIcon } from 'lucide-react';
 
@@ -10,7 +10,7 @@ const Auth: React.FC = () => {
   return (
     <div className={styles.authPage}>
       <div className={styles.authContainer}>
-        <img src={logo} alt="NULP Logo" className={styles.logo} />
+        <img src={logo} alt="Logo" className={styles.logo} />
         <h1 className={styles.title}>Увійдіть в систему</h1>
         <form className={styles.form}>
           <input

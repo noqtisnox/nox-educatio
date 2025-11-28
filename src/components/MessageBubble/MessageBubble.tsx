@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./MessageBubble.module.css";
 
-import placeholderImg from "../../assets/img/abstract-watercolor-img.jpg";
+import placeholderImg from "@assets/img/abstract-watercolor-img.jpg";
 
 type props = {
   sender: string;

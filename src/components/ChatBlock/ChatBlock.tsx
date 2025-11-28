@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from "react"; // 👈 Add useRef and useEffect
+import React, { useState, useRef, useEffect } from "react";
 
 import MessageBubble from "../MessageBubble";
 
 import styles from "./ChatBlock.module.css";
 
-const initialMessages = [ // 👈 Added many messages to force overflow
+const initialMessages = [
     "Hi there!",
     "This is a short message.",
     "This is a longer message designed to take up a bit more space in the chat view.",
@@ -20,12 +20,9 @@ const initialMessages = [ // 👈 Added many messages to force overflow
 
 const ChatBlock = () => {
     const [outcomingMessage, setOutcomingMessage] = useState('');
-    const messageViewRef = useRef<HTMLDivElement>(null); // 👈 Create a ref
-    
-    // 👈 Add messages state
+    const messageViewRef = useRef<HTMLDivElement>(null);
     const [messages, setMessages] = useState(initialMessages); 
 
-    // 👈 Hook to scroll to the bottom whenever messages change
     useEffect(() => {
         if (messageViewRef.current) {
             messageViewRef.current.scrollTop = messageViewRef.current.scrollHeight;
@@ -36,7 +33,6 @@ const ChatBlock = () => {
         setOutcomingMessage(event.target.value);
     }
     
-    // 👈 Add submit handler
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
         if (outcomingMessage.trim() === '') return;
@@ -53,14 +49,11 @@ const ChatBlock = () => {
  
     return (
         <div className={styles.chatBoxWrapper}>
-            {/* 👈 Attach the ref to the scrollable element */}
             <div className={styles.messageView} ref={messageViewRef}>
-                {/* 👈 Render messages from state */}
                 {messages.map((msg) => (
                     <MessageBubble key={msg.id} sender={msg.sender} message={msg.message}/>
                 ))}
             </div>
-            {/* 👈 Attach the submit handler */}
             <form onSubmit={handleSubmit}>
                 <input type="text" value={outcomingMessage} onChange={handleChange} placeholder="Say something..."/>
                 <button type="submit">Send</button> 
