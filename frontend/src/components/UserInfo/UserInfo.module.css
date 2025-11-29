@@ -1,0 +1,90 @@
+.userInfoWrapper {
+  background-color: white;
+  display: block; 
+  width: 400px;
+  
+  padding: 24px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.userPFP {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid var(--color-main);
+}
+
+.userName {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--color-main);
+}
+
+.userEmail, .joinDate {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0 0 0;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+  text-align: center;
+}
+
+.statItem {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.statValue {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-main);
+  margin: 0 0 4px 0;
+}
+
+.statLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0;
+}
+
+.gradeDisplay {
+  margin: 8px 0;
+  display: block;
+}
+
+.gradeValue {
+  font-size: 36px;
+  font-weight: 800;
+  color: #28a745;
+  display: block;
+  line-height: 1;
+}
+
+.gradeLabel {
+  font-size: 12px;
+  color: #6c757d;
+  text-transform: uppercase;
+}

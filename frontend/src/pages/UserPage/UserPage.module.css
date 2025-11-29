@@ -1,0 +1,33 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pageContent {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.leftColumn {
+    flex-basis: 400px;
+    flex-shrink: 0;
+}
+
+.rightColumn {
+    flex-grow: 1;
+    min-width: 500px;
+}
+
+.loadingMessage, .errorMessage {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #6c757d;
+    text-align: center;
+}
